@@ -5,7 +5,7 @@
 
 ## Usage
 
-To run the example project; clone the repo, and run `pod install` from the Project directory first.
+MTRadiaMenu is easy to use and configure, its a subclass of UIControl. Simply create a menu, configure and add some menu items. Menu items are subclasses of MTMenuItem that you can do your own drawing in. See examples in the demo project. 
 
 ## Requirements
 
