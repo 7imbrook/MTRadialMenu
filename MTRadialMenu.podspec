@@ -12,11 +12,10 @@ Pod::Spec.new do |s|
                     MTRadialMenu is a customizable UIControl that appears on a long press on the view its a part of,
                     and gives the user options around their finger that they can select.
                    DESC
-  s.homepage     = "http://EXAMPLE/NAME"
-  s.screenshots  = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage     = "https://github.com/7imbrook/MTRadialMenu"
   s.license      = 'MIT'
   s.author       = { "7imbrook" => "timbrook480@gmail.com" }
-  s.source       = { :git => "https://github.com/7imbrook/MTRadialMenu.git", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/7imbrook/MTRadialMenu.git", :tag => "0.1.0" }
 
   s.platform     = :ios, '7.0'
   s.ios.deployment_target = '7.0'
