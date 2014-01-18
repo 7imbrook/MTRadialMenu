@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C1776AF18860AFE0028C108 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1776AE18860AFE0028C108 /* Foundation.framework */; };
+		4C1776B118860AFE0028C108 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1776B018860AFE0028C108 /* CoreGraphics.framework */; };
+		4C1776B318860AFE0028C108 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1776B218860AFE0028C108 /* UIKit.framework */; };
+		4C1776B918860AFE0028C108 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C1776B718860AFE0028C108 /* InfoPlist.strings */; };
+		4C1776BB18860AFE0028C108 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1776BA18860AFE0028C108 /* main.m */; };
+		4C1776BF18860AFE0028C108 /* RMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1776BE18860AFE0028C108 /* RMAppDelegate.m */; };
+		4C1776C218860AFE0028C108 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C1776C018860AFE0028C108 /* Main.storyboard */; };
+		4C1776C518860AFE0028C108 /* RMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1776C418860AFE0028C108 /* RMViewController.m */; };
+		4C1776C718860AFE0028C108 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C1776C618860AFE0028C108 /* Images.xcassets */; };
+		4C1776CE18860AFE0028C108 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1776CD18860AFE0028C108 /* XCTest.framework */; };
+		4C1776CF18860AFE0028C108 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1776AE18860AFE0028C108 /* Foundation.framework */; };
+		4C1776D018860AFE0028C108 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1776B218860AFE0028C108 /* UIKit.framework */; };
+		4C1776D818860AFE0028C108 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C1776D618860AFE0028C108 /* InfoPlist.strings */; };
+		4C1776DA18860AFE0028C108 /* MTRadialMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1776D918860AFE0028C108 /* MTRadialMenuTests.m */; };
+		4C8AEE88188A035100CF71BA /* AddNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8AEE85188A035100CF71BA /* AddNote.m */; };
+		4C8AEE89188A035100CF71BA /* AddImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8AEE87188A035100CF71BA /* AddImage.m */; };
+		E533A7CCEFFC44AAB296DC18 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A66E12C73A1F4123A6B00584 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C1776D118860AFE0028C108 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C1776A318860AFE0028C108 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C1776AA18860AFE0028C108;
+			remoteInfo = MTRadialMenu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4C1776AB18860AFE0028C108 /* MTRadialMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTRadialMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C1776AE18860AFE0028C108 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4C1776B018860AFE0028C108 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4C1776B218860AFE0028C108 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4C1776B618860AFE0028C108 /* MTRadialMenu-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MTRadialMenu-Info.plist"; sourceTree = "<group>"; };
+		4C1776B818860AFE0028C108 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4C1776BA18860AFE0028C108 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4C1776BC18860AFE0028C108 /* MTRadialMenu-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MTRadialMenu-Prefix.pch"; sourceTree = "<group>"; };
+		4C1776BD18860AFE0028C108 /* RMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMAppDelegate.h; sourceTree = "<group>"; };
+		4C1776BE18860AFE0028C108 /* RMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMAppDelegate.m; sourceTree = "<group>"; };
+		4C1776C118860AFE0028C108 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C1776C318860AFE0028C108 /* RMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMViewController.h; sourceTree = "<group>"; };
+		4C1776C418860AFE0028C108 /* RMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMViewController.m; sourceTree = "<group>"; };
+		4C1776C618860AFE0028C108 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4C1776CC18860AFE0028C108 /* MTRadialMenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTRadialMenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C1776CD18860AFE0028C108 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4C1776D518860AFE0028C108 /* MTRadialMenuTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MTRadialMenuTests-Info.plist"; sourceTree = "<group>"; };
+		4C1776D718860AFE0028C108 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4C1776D918860AFE0028C108 /* MTRadialMenuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTRadialMenuTests.m; sourceTree = "<group>"; };
+		4C8AEE84188A035100CF71BA /* AddNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNote.h; sourceTree = "<group>"; };
+		4C8AEE85188A035100CF71BA /* AddNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNote.m; sourceTree = "<group>"; };
+		4C8AEE86188A035100CF71BA /* AddImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddImage.h; sourceTree = "<group>"; };
+		4C8AEE87188A035100CF71BA /* AddImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddImage.m; sourceTree = "<group>"; };
+		8658F668FA9D4423BB8568B5 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		A66E12C73A1F4123A6B00584 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C1776A818860AFE0028C108 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C1776B118860AFE0028C108 /* CoreGraphics.framework in Frameworks */,
+				4C1776B318860AFE0028C108 /* UIKit.framework in Frameworks */,
+				4C1776AF18860AFE0028C108 /* Foundation.framework in Frameworks */,
+				E533A7CCEFFC44AAB296DC18 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C1776C918860AFE0028C108 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C1776CE18860AFE0028C108 /* XCTest.framework in Frameworks */,
+				4C1776D018860AFE0028C108 /* UIKit.framework in Frameworks */,
+				4C1776CF18860AFE0028C108 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C1776A218860AFE0028C108 = {
+			isa = PBXGroup;
+			children = (
+				4C1776B418860AFE0028C108 /* Sample */,
+				4C1776D318860AFE0028C108 /* MTRadialMenuTests */,
+				4C1776AD18860AFE0028C108 /* Frameworks */,
+				4C1776AC18860AFE0028C108 /* Products */,
+				8658F668FA9D4423BB8568B5 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		4C1776AC18860AFE0028C108 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C1776AB18860AFE0028C108 /* MTRadialMenu.app */,
+				4C1776CC18860AFE0028C108 /* MTRadialMenuTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C1776AD18860AFE0028C108 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C1776AE18860AFE0028C108 /* Foundation.framework */,
+				4C1776B018860AFE0028C108 /* CoreGraphics.framework */,
+				4C1776B218860AFE0028C108 /* UIKit.framework */,
+				4C1776CD18860AFE0028C108 /* XCTest.framework */,
+				A66E12C73A1F4123A6B00584 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C1776B418860AFE0028C108 /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				4C8AEE83188A033C00CF71BA /* Menu Examples */,
+				4C1776BD18860AFE0028C108 /* RMAppDelegate.h */,
+				4C1776BE18860AFE0028C108 /* RMAppDelegate.m */,
+				4C1776C018860AFE0028C108 /* Main.storyboard */,
+				4C1776C318860AFE0028C108 /* RMViewController.h */,
+				4C1776C418860AFE0028C108 /* RMViewController.m */,
+				4C1776C618860AFE0028C108 /* Images.xcassets */,
+				4C1776B518860AFE0028C108 /* Supporting Files */,
+			);
+			name = Sample;
+			path = MTRadialMenu;
+			sourceTree = "<group>";
+		};
+		4C1776B518860AFE0028C108 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C1776B618860AFE0028C108 /* MTRadialMenu-Info.plist */,
+				4C1776B718860AFE0028C108 /* InfoPlist.strings */,
+				4C1776BA18860AFE0028C108 /* main.m */,
+				4C1776BC18860AFE0028C108 /* MTRadialMenu-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C1776D318860AFE0028C108 /* MTRadialMenuTests */ = {
+			isa = PBXGroup;
+			children = (
+				4C1776D918860AFE0028C108 /* MTRadialMenuTests.m */,
+				4C1776D418860AFE0028C108 /* Supporting Files */,
+			);
+			path = MTRadialMenuTests;
+			sourceTree = "<group>";
+		};
+		4C1776D418860AFE0028C108 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C1776D518860AFE0028C108 /* MTRadialMenuTests-Info.plist */,
+				4C1776D618860AFE0028C108 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C8AEE83188A033C00CF71BA /* Menu Examples */ = {
+			isa = PBXGroup;
+			children = (
+				4C8AEE84188A035100CF71BA /* AddNote.h */,
+				4C8AEE85188A035100CF71BA /* AddNote.m */,
+				4C8AEE86188A035100CF71BA /* AddImage.h */,
+				4C8AEE87188A035100CF71BA /* AddImage.m */,
+			);
+			name = "Menu Examples";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C1776AA18860AFE0028C108 /* MTRadialMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C1776DD18860AFE0028C108 /* Build configuration list for PBXNativeTarget "MTRadialMenu" */;
+			buildPhases = (
+				B95616B9DF194A3588C0FC58 /* Check Pods Manifest.lock */,
+				4C1776A718860AFE0028C108 /* Sources */,
+				4C1776A818860AFE0028C108 /* Frameworks */,
+				4C1776A918860AFE0028C108 /* Resources */,
+				4247A55A45DD48369913B683 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MTRadialMenu;
+			productName = MTRadialMenu;
+			productReference = 4C1776AB18860AFE0028C108 /* MTRadialMenu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4C1776CB18860AFE0028C108 /* MTRadialMenuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C1776E018860AFE0028C108 /* Build configuration list for PBXNativeTarget "MTRadialMenuTests" */;
+			buildPhases = (
+				4C1776C818860AFE0028C108 /* Sources */,
+				4C1776C918860AFE0028C108 /* Frameworks */,
+				4C1776CA18860AFE0028C108 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C1776D218860AFE0028C108 /* PBXTargetDependency */,
+			);
+			name = MTRadialMenuTests;
+			productName = MTRadialMenuTests;
+			productReference = 4C1776CC18860AFE0028C108 /* MTRadialMenuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C1776A318860AFE0028C108 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RM;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Timbrook;
+				TargetAttributes = {
+					4C1776CB18860AFE0028C108 = {
+						TestTargetID = 4C1776AA18860AFE0028C108;
+					};
+				};
+			};
+			buildConfigurationList = 4C1776A618860AFE0028C108 /* Build configuration list for PBXProject "MTRadialMenu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C1776A218860AFE0028C108;
+			productRefGroup = 4C1776AC18860AFE0028C108 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C1776AA18860AFE0028C108 /* MTRadialMenu */,
+				4C1776CB18860AFE0028C108 /* MTRadialMenuTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C1776A918860AFE0028C108 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C1776C718860AFE0028C108 /* Images.xcassets in Resources */,
+				4C1776B918860AFE0028C108 /* InfoPlist.strings in Resources */,
+				4C1776C218860AFE0028C108 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C1776CA18860AFE0028C108 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C1776D818860AFE0028C108 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4247A55A45DD48369913B683 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B95616B9DF194A3588C0FC58 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C1776A718860AFE0028C108 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C1776BB18860AFE0028C108 /* main.m in Sources */,
+				4C1776BF18860AFE0028C108 /* RMAppDelegate.m in Sources */,
+				4C8AEE88188A035100CF71BA /* AddNote.m in Sources */,
+				4C8AEE89188A035100CF71BA /* AddImage.m in Sources */,
+				4C1776C518860AFE0028C108 /* RMViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C1776C818860AFE0028C108 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C1776DA18860AFE0028C108 /* MTRadialMenuTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C1776D218860AFE0028C108 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C1776AA18860AFE0028C108 /* MTRadialMenu */;
+			targetProxy = 4C1776D118860AFE0028C108 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4C1776B718860AFE0028C108 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C1776B818860AFE0028C108 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4C1776C018860AFE0028C108 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C1776C118860AFE0028C108 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4C1776D618860AFE0028C108 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C1776D718860AFE0028C108 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C1776DB18860AFE0028C108 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4C1776DC18860AFE0028C108 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C1776DE18860AFE0028C108 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8658F668FA9D4423BB8568B5 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MTRadialMenu/MTRadialMenu-Prefix.pch";
+				INFOPLIST_FILE = "MTRadialMenu/MTRadialMenu-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4C1776DF18860AFE0028C108 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8658F668FA9D4423BB8568B5 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MTRadialMenu/MTRadialMenu-Prefix.pch";
+				INFOPLIST_FILE = "MTRadialMenu/MTRadialMenu-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4C1776E118860AFE0028C108 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MTRadialMenu.app/MTRadialMenu";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MTRadialMenu/MTRadialMenu-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MTRadialMenuTests/MTRadialMenuTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		4C1776E218860AFE0028C108 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MTRadialMenu.app/MTRadialMenu";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MTRadialMenu/MTRadialMenu-Prefix.pch";
+				INFOPLIST_FILE = "MTRadialMenuTests/MTRadialMenuTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C1776A618860AFE0028C108 /* Build configuration list for PBXProject "MTRadialMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C1776DB18860AFE0028C108 /* Debug */,
+				4C1776DC18860AFE0028C108 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C1776DD18860AFE0028C108 /* Build configuration list for PBXNativeTarget "MTRadialMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C1776DE18860AFE0028C108 /* Debug */,
+				4C1776DF18860AFE0028C108 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C1776E018860AFE0028C108 /* Build configuration list for PBXNativeTarget "MTRadialMenuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C1776E118860AFE0028C108 /* Debug */,
+				4C1776E218860AFE0028C108 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C1776A318860AFE0028C108 /* Project object */;
+}

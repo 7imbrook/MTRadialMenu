@@ -1,0 +1,14 @@
+PODS:
+  - MTRadialMenu (0.1.0)
+
+DEPENDENCIES:
+  - MTRadialMenu (from `../MTRadialMenu.podspec`)
+
+EXTERNAL SOURCES:
+  MTRadialMenu:
+    :path: ../MTRadialMenu.podspec
+
+SPEC CHECKSUMS:
+  MTRadialMenu: 124e1bb7513627375ae1b1c54aa69c8d156e5845
+
+COCOAPODS: 0.29.0

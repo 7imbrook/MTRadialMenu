@@ -1,7 +1,1 @@
 pod "MTRadialMenu", :path => "../MTRadialMenu.podspec"
-
-target "Demo" do
-end
-
-target "DemoTests" do
-end
