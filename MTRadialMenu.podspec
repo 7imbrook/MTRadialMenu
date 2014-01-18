@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "MTRadialMenu"
-  s.version      = "0.1.0"
+  s.version      = "0.1.1"
   s.summary      = "A simple radial menu."
   s.description  = <<-DESC
                     MTRadialMenu is a customizable UIControl that appears on a long press on the view its a part of,
