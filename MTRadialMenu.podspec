@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/7imbrook/MTRadialMenu"
   s.license      = 'MIT'
   s.author       = { "7imbrook" => "timbrook480@gmail.com" }
-  s.source       = { :git => "https://github.com/7imbrook/MTRadialMenu.git", :tag => "0.1.0" }
+  s.source       = { :git => "https://github.com/7imbrook/MTRadialMenu.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '7.0'
   s.ios.deployment_target = '7.0'
