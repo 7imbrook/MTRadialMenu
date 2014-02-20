@@ -30,6 +30,11 @@
 @property CGFloat incrementAngle;
 
 /**
+ * Radius of the menu items, min 50
+ */
+@property CGFloat radius;
+
+/**
  * Used to itentify the menu item that was last selected, suggested to only use
  * inside the UIControlEventTouchUpInside call.
  */

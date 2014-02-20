@@ -16,9 +16,9 @@ CGPoint CGRectCenterPoint(CGRect rect) {
                        rect.size.height / 2.0);
 }
 
-CGAffineTransform CGAffineTransformOrientOnAngle(CGFloat angle){
+CGAffineTransform CGAffineTransformOrientOnAngle(CGFloat angle, CGFloat radius){
     CGAffineTransform newTransform = CGAffineTransformRotate(CGAffineTransformIdentity, angle);
-    newTransform = CGAffineTransformTranslate(newTransform, 0.0, -60.0);
+    newTransform = CGAffineTransformTranslate(newTransform, 0.0, -(radius >= 50 ? radius : 50));
     return newTransform;
 }
 
@@ -81,7 +81,7 @@ CGAffineTransform CGAffineTransformOrientOnAngle(CGFloat angle){
     [UIView animateWithDuration:1.0 delay:0.0 usingSpringWithDamping:0.4 initialSpringVelocity:0.3 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         for (MTMenuItem *item in self.subviews) {
             if ([item isKindOfClass:[MTMenuItem class]]) {
-                item.transform = CGAffineTransformOrientOnAngle(DEGREES_TO_RADIANS([objc_getAssociatedObject(item, "display_angle") floatValue]));
+                item.transform = CGAffineTransformOrientOnAngle(DEGREES_TO_RADIANS([objc_getAssociatedObject(item, "display_angle") floatValue]), _radius ?: 60.0);
             }
         }
         self.transform = CGAffineTransformIdentity;
@@ -139,7 +139,7 @@ CGAffineTransform CGAffineTransformOrientOnAngle(CGFloat angle){
             CGPoint touch = [reg locationInView:view];
             view.isSelected = [view.collisionPath containsPoint:touch];
             if (view.isSelected) {
-                CGAffineTransform bigTrans = CGAffineTransformScale(CGAffineTransformOrientOnAngle(DEGREES_TO_RADIANS([objc_getAssociatedObject(view, "display_angle") floatValue])), 1.5, 1.5);
+                CGAffineTransform bigTrans = CGAffineTransformScale(CGAffineTransformOrientOnAngle(DEGREES_TO_RADIANS([objc_getAssociatedObject(view, "display_angle") floatValue]), _radius ?: 60.0), 1.5, 1.5);
                 bigTrans = CGAffineTransformTranslate(bigTrans, 0.0, -13.0);
                 if (CGAffineTransformEqualToTransform(bigTrans, view.transform)) {
                     continue;
@@ -149,7 +149,7 @@ CGAffineTransform CGAffineTransformOrientOnAngle(CGFloat angle){
                 } completion:nil];
             } else {
                 [UIView animateWithDuration:0.2 animations:^{
-                    view.transform = CGAffineTransformOrientOnAngle(DEGREES_TO_RADIANS([objc_getAssociatedObject(view, "display_angle") floatValue]));
+                    view.transform = CGAffineTransformOrientOnAngle(DEGREES_TO_RADIANS([objc_getAssociatedObject(view, "display_angle") floatValue]), _radius ?: 60.0);
                 }];
             }
             [view setNeedsDisplay];
